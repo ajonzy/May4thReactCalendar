@@ -23,7 +23,7 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-    fetch("http://127.0.0.1:5000/month/get", { method: "GET" })
+    fetch("https://may24th-react-calendar-api-aoj.herokuapp.com/month/get", { method: "GET" })
     .then(response => response.json())
     .then(data => {
       const month = data[1]
